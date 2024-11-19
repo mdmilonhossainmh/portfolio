@@ -1,0 +1,420 @@
+*{
+   padding: 0;
+   margin: 0;
+   outline: none;
+   box-sizing: border-box;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+ul,ol,li{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+h1,h2,h3,h4,h5,h6,div,p,a,button,span,nav,img{
+  margin: 0;
+  padding: 0;
+}
+body{
+   font-family: sans-serif;
+   font-style: normal;
+}
+
+ 
+   .bgc{background-color:rgb(17,171,169) !important}
+ 
+   nav{
+    z-index: 10;
+  }
+/* universel end ---*/
+
+/* head css start */
+
+.nav-item:hover .nav-link{
+  color: black !important;
+  transition: 0.4s !important;
+  cursor: pointer;
+}
+.navbar-toggler{
+  color: white;
+  background-color: white;
+}
+
+
+/* @media (min-width: 768px) and (max-width: 1024px){
+  .nav-bar{
+
+  }  
+}*/
+
+/* head css end--- */
+
+/* bannar css start */
+      .bannar{
+        background-image: url(../img/bannar.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         object-fit: cover;
+         position: relative;
+         z-index: 2;
+         
+      }
+      .bannar::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #0b0b0b5e;
+        z-index: -1;
+
+      }
+      .bannar_articels *{
+        color: white;
+      }
+/* bannar css end ---*/
+
+
+/* about  start */
+.about_img{
+  width: 250px;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+   .about_img{
+      width: 400px;
+    } 
+    .about_text p{
+      font-size: 16px !important;
+      text-align: justify;
+     
+    }
+}
+@media (max-width:768px){
+  .about_text{
+    margin-top: 20px !important;
+    padding:0 px;
+  }
+}
+
+/* about   end--- */
+.skill_text{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 40px;
+}
+
+@media (max-width:768px){
+   .skill_text{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 30px;
+   }
+}
+   
+@media (max-width:576px){
+   .skill_text{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 40px;
+   }
+}
+   
+
+/*  skill start */
+.progress, .progress-stacked {
+	background-color: rgba(0, 0, 0, 0.664);
+}
+
+
+/*  */
+.skills-section {
+  padding: 0px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+12
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #8f8b8b;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 25px;
+  margin: 0 auto;
+}
+
+.progress {
+  height: 100%;
+  background-color: rgb(17,171,169);
+  color: #fff;
+  text-align: right;
+  line-height: 25px;
+  padding-right: 10px;
+  border-radius: 5px;
+  padding-left: 5px;
+  width: 0;
+  animation: fill 2s ease-in-out forwards;
+}
+
+@keyframes fill {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(100);
+  }
+}
+/*  skill  end--- */
+
+/* service start */
+.services-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color:  rgb(17,171,169);
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* service end */
+
+/* protfolio css start  -----*/
+.protfolio_nav li:hover{
+   background-color: rgb(17,171,169) ;
+   border-radius: 15px;
+   cursor: pointer !important;
+   color: white;
+ }
+ .protfolio_project div{
+   position: relative;
+   height: 200px;
+   overflow: hidden;
+   box-sizing: border-box;
+ }
+ .protfolio_project div .pcon{
+   margin: 5px ;
+   border-bottom: 10px solid black;
+   overflow-y: scroll;
+ }
+ .protfolio_project div:hover >a{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   transition: 1s;
+   background-color: rgba(238, 234, 232, 0.616);
+   visibility: visible;
+   opacity:1;
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+ }
+ .protfolio_project div >a p{
+   display: none;
+   padding: 0 !important;
+   margin: 0 !important;
+ }
+ .protfolio_project div:hover >a p{
+   color: rgb(18, 26, 15) !important;
+   display: block;
+   text-transform: uppercase;
+ }
+ 
+ @media(max-width:576px){
+  .mix{
+    width: 300px !important;
+    margin: 5px auto;
+  }
+  /* .protfolio_project .mix{
+    margin: 4px 55px 0px 55px !important;
+    border:10px solid red;
+  }
+ 
+ 
+ }
+ @media(max-width:300px){
+   #px-3{
+    text-align: center;
+   }
+   .social_icon{
+     flex-direction: column;
+   } */
+ }
+
+
+ /* protfolio css end  ----------*/
+
+
+ /* awards & certifications options protfolio  ----------*/
+ .awards-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.awards {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.awards-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.award-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.award-card h3 {
+  font-size: 1.5rem;
+  color:  rgb(17,171,169);
+  margin-bottom: 10px;
+}
+
+.award-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+ /* awards & certifications options protfolio  ----------*/
+
+
+/*  faq start */
+.choose_img{
+  margin: -27px;
+}
+
+/*  faq  end--- */
+
+
+
+
+/* contract css start */
+.maparea .location-indicator{
+   display: flex;
+ }
+ .maparea .location-indicator div .mapspan{
+   font-size: 15px;
+ }
+ 
+ /* contract css end */
+
+ /* footer   start */
+ .copy_text,
+ .footer_icon a,i{
+  color: white !important;
+  font-size: 20px;
+  text-transform: uppercase;
+ }
+ @media (max-width: 1224px) { 
+  .footer_icon a .fab{
+    display: none !important;
+  }
+  }
+/* footer    end--- */
+
+
+/* ===================================== */
+/* respnsive css  start */
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+
+
+/* @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+     
+} */
+
+
+/* resopnsive  css  end----------- */
