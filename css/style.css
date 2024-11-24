@@ -18,20 +18,23 @@ h1,h2,h3,h4,h5,h6,div,p,a,button,span,nav,img{
   padding: 0;
 }
 body{
-   font-family: sans-serif;
+   font-family: 'Times New Roman', Times, serif;
    font-style: normal;
 }
 
  
-   .bgc{background-color:rgb(17,171,169) !important}
+.bgc{background-color:rgb(17,171,169) !important}
  
-   nav{
+ nav{
     z-index: 10;
   }
 /* universel end ---*/
 
 /* head css start */
-
+.navbar{
+  position: sticky;
+  top:0px;
+}
 .nav-item:hover .nav-link{
   color: black !important;
   transition: 0.4s !important;
@@ -81,7 +84,9 @@ body{
 .about_img{
   width: 250px;
 }
-
+.about_text p{
+  opacity:0.8 !important;
+}
 @media (min-width: 768px) and (max-width: 992px){
    .about_img{
       width: 400px;
@@ -138,7 +143,7 @@ body{
   margin-bottom: 30px;
   color: #333;
 }
-12
+
 .skill {
   margin-bottom: 20px;
 }
