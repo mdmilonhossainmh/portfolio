@@ -36,8 +36,9 @@ body{
   top:0px;
 }
 .nav-item:hover .nav-link{
+  transition: 0.5s;
   color: black !important;
-  transition: 0.4s !important;
+  transition: 0.9s !important;
   cursor: pointer;
 }
 .navbar-toggler{
@@ -85,7 +86,8 @@ body{
   width: 250px;
 }
 .about_text p{
-  opacity:0.8 !important;
+
+  color: #555;
 }
 @media (min-width: 768px) and (max-width: 992px){
    .about_img{
@@ -100,7 +102,10 @@ body{
 @media (max-width:768px){
   .about_text{
     margin-top: 20px !important;
-    padding:0 px;
+    
+  }
+  .about_text p{
+    font-size: 15px !important;
   }
 }
 
@@ -172,6 +177,7 @@ body{
   padding-right: 10px;
   border-radius: 5px;
   padding-left: 5px;
+  font-size: 25px;
   width: 0;
   animation: fill 2s ease-in-out forwards;
 }
@@ -236,13 +242,13 @@ body{
   margin-bottom: 10px;
   color:  rgb(17,171,169);
 }
-
 .card-content p {
   font-size: 1rem;
-  color: #666;
+  color: #555;
+  width: 250px;
 }
+/* service end ------*/
 
-/* service end */
 
 /* protfolio css start  -----*/
 .protfolio_nav li:hover{
@@ -250,6 +256,10 @@ body{
    border-radius: 15px;
    cursor: pointer !important;
    color: white;
+ }
+
+ .nav-item {
+  text-transform: uppercase;
  }
  .protfolio_project div{
    position: relative;
@@ -259,7 +269,7 @@ body{
  }
  .protfolio_project div .pcon{
    margin: 5px ;
-   border-bottom: 10px solid black;
+   border-bottom: 12px solid black;
    overflow-y: scroll;
  }
  .protfolio_project div:hover >a{
@@ -329,7 +339,7 @@ body{
 .awards-section h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #333;
+  color: #555;
 }
 
 .awards-grid {
@@ -360,7 +370,7 @@ body{
 
 .award-card p {
   font-size: 1rem;
-  color: #666;
+  color: #555;
 }
 
  /* awards & certifications options protfolio  ----------*/
@@ -369,6 +379,9 @@ body{
 /*  faq start */
 .choose_img{
   margin: -27px;
+}
+.servies_list li{
+color: #555;;
 }
 
 /*  faq  end--- */
@@ -383,7 +396,9 @@ body{
  .maparea .location-indicator div .mapspan{
    font-size: 15px;
  }
- 
+ .form-label{
+  color: #555;
+ }
  /* contract css end */
 
  /* footer   start */
